@@ -1,0 +1,15 @@
+# Cluster IP  Service
+apiVersion: v1
+kind: Service
+metadata:  
+  name: my-clusterip-service
+spec:
+  selector:    
+    app: nginxsss
+  type: ClusterIP
+  ports:  
+  - name: http
+    port: 80
+    targetPort: 80
+    protocol: TCP
+© 2021 GitHub, Inc.
